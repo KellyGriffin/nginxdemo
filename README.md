@@ -2,17 +2,19 @@
 Simple NGINX is a fairly simple, static website running on NGINX to demonstrating NGINX in a Docker container.
 
 ## Building from Scratch
-Simple NGINX is hosted in a Docker Hub repository under `arueth/simple-nginx` but you can also build it locally with the following steps:
+This repo is used to showcase a build change from within Rancher.  I have placed the 2 versions of the Docker image on Docker hub.
+
+This repo is the final copy.
 
 ```
-$ git clone https://github.com/docker-demo/simple-nginx.git
-$ cd simple-nginx
-$ docker build -t simple-nginx .
+$ clone the git
+$ cd nginxdemo
+$ docker build -t <imagename> .
 ```
 
 ## Running the Built Container
 
 ```
-$ docker run -it -p 8080:80 simple-nginx
+$ docker run -it -p 80:80 <imagename>
 ```
 
